@@ -1,0 +1,274 @@
+.container {
+	width: 1170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+header {
+	flex-direction: row;
+	height: 96px;
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	width: 100%;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+	position: relative;
+	text-align: center;
+}
+
+.navigation--logo {
+	display: flex;
+	align-items: center;
+
+}
+
+.navigation--logoImg {
+	width: 70px;
+	height: 64px;
+}
+
+.navigation--logo__title {
+	font-size: 48px;
+	margin: 16px 2px;
+	color: #2D3436;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: -1px;
+}
+
+.navigation__nav {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navigation__nav--element {
+	color: #6C5CE7;
+	font-size: 18px;
+	list-style-type: none;
+}
+
+.navigation__nav--dots {
+	color: #FDCB6E;
+	margin: 0 16px;
+}
+
+.navigation__nav--element:hover {
+	color: #2D3436;
+	font-weight: 400;
+}
+
+.navigation__btn {
+	padding: 8px 16px;
+	font-weight: 700;
+	width: 170px;
+	font-size: 24px;
+	color: #FFFFFF;
+	background: #2D3436;
+	margin: 0 122px 0 116px;
+	border-radius: 999px;
+	outline: none;
+}
+
+.line {
+	position: relative;
+	padding: 0;
+	height: 5px;
+	border: none;
+	border-top: 0px solid #333;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.hero--rect {
+	position: absolute;
+	z-index: 1;
+
+	right: 0px;
+	top: 1px;
+	bottom: 530px;
+}
+
+.hero--dots {
+	position: absolute;
+	z-index: 1;
+	width: 209px;
+	height: 285px;
+	right: 0px;
+	top: 114px;
+}
+
+.hero--under {
+	position: absolute;
+	z-index: 1;
+	width: 191px;
+	height: 51px;
+	top: 253px;
+	left: calc(50% - 191px/2 + 41.5px);
+}
+
+.hero {
+	align-items: center;
+	text-align: center;
+}
+
+.hero__container {
+	z-index: 2;
+	position: relative;
+}
+
+.hero__title {
+	font-weight: 800;
+	font-size: 96px;
+	text-shadow: 0px 4px 0px #FFFFFF;
+	margin: 80px 0 16px 0;
+}
+
+.hero__subtitle {
+	font-weight: 900;
+	font-size: 64px;
+	margin: 0;
+}
+
+.hero__title--highlight {
+	color: #D63031;
+}
+
+/* grid */
+
+.hero--grid {
+	display: grid;
+	margin: 64px 0 80px;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-gap: 30px;
+	z-index: 2;
+}
+
+.hero--box1 {
+	grid-area: 1 / 1 / 4 / 4;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: var(--main-text-color);
+}
+
+.hero--box2 {
+	grid-area: 9 / 7 / 16 / 11;
+	position: relative;
+}
+
+.hero--box3 {
+	grid-area: 9 / 4 / 15 / 7;
+}
+
+.hero--box4 {
+	grid-area: 3 / 1 / 13 / 4;
+	position: relative;
+	align-self: flex-end;
+}
+
+.hero--box5 {
+	grid-area: 1 / 4 / 9 / 9;
+	position: relative;
+}
+
+.hero--box6 {
+	grid-area: 13 / 1 / 15 / 4;
+	height: 82px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	letter-spacing: -0.5px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.hero--box7 {
+	grid-area: 9 / 11 / 14 / 13;
+}
+
+.hero--box8 {
+	grid-area: 4 / 9 / 9 / 11;
+	align-self: flex-end;
+}
+
+.hero--box9 {
+	grid-area: 4 / 11 / 9 / 13;
+	align-self: flex-end;
+}
+
+.hero--box10 {
+	grid-area: 3 / 9 / 4 / 13;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: var(--main-text-color);
+}
+
+.grid-h3 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	letter-spacing: -1px;
+	color: #fff;
+	text-shadow: 0px 4px 0px var(--text-shadow);
+}
+
+.box-2-text {
+	position: absolute;
+	left: 16px;
+	right: 16px;
+	top: 16px;
+}
+
+.box-4-text {
+	position: absolute;
+	left: 16px;
+	right: 16px;
+	top: 16px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.25px;
+	color: #fff;
+	padding: 0 16px;
+}
+
+.box-4-text>b {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0.2px;
+}
+
+.box-5-text {
+	position: absolute;
+	left: 16px;
+	right: 16px;
+	bottom: 16px;
+}
+
+.btn {
+	border-radius: 999px;
+	background: #6C5CE7;
+}
