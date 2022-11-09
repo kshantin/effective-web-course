@@ -1,4 +1,16 @@
 :root {
+	/* Font size */
+	--main-font: ; 
+	--font-12: 12px;
+	--font-14: 14px;
+	--font-18: 18px;
+	--font-20: 20px;
+	--font-24: 24px;
+	--font-32: 32px;
+	--font-48: 48px;
+	--font-64: 64px;
+	--font-96: 96px;
+	/* Colors */
 	--main-white: white;
 	--main-purple: #6C5CE7;
 	--main-gray: #ADADAD;
@@ -6,13 +18,13 @@
 	--header-burger: #5C5C5C;
 	--header-dots: #FDCB6E;
 	--header-shadow: #26323829;
+	--hero__title--highlight: #D63031; 
 	--pricing-shadow: #2632381F;
 	--text-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16),
 		0px 4px 8px rgba(38, 50, 56, 0.08);
 	--form-input-bg: rgba(194, 194, 194, 0.24);
 	--form-purple-border: rgba(108, 92, 231, 0.24);
 	--footer-icons: #FFEAA7;
-
 }
 
 .container {
@@ -26,7 +38,8 @@
 }
 
 body {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Inter',
+		sans-serif;
 	position: relative;
 	margin: 0 auto;
 }
@@ -86,7 +99,7 @@ header {
 .header--title {
 	margin: 0;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: var(--font-96);
 	line-height: 56px;
 	letter-spacing: -1px;
 	color: var(--main-text-color);
@@ -97,7 +110,7 @@ header {
 .header--nav {
 	display: flex;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	color: var(--main-purple);
 }
@@ -144,7 +157,7 @@ header {
 	position: relative;
 	z-index: 5;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: var(--font-24);
 	line-height: 36px;
 	letter-spacing: 0.25px;
 	color: var(--main-white);
@@ -207,20 +220,20 @@ header {
 
 .hero__title {
 	font-weight: 800;
-	font-size: 96px;
-	text-shadow: 0px 4px 0px #FFFFFF;
+	font-size: var(--font-96);
+	text-shadow: 0px 4px 0px var(--main-white);
 	margin: 80px 0 16px 0;
 	letter-spacing: -3px;
 }
 
 .hero__subtitle {
 	font-weight: 900;
-	font-size: 64px;
+	font-size: var(--font-64);
 	margin: 0;
 }
 
 .hero__title--highlight {
-	color: #D63031;
+	color: var(--hero__title--highlight);
 }
 
 /* grid */
@@ -237,7 +250,7 @@ header {
 .hero--box1 {
 	grid-area: 1 / 1 / 4 / 4;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	color: var(--main-text-color);
 }
@@ -266,11 +279,11 @@ header {
 	grid-area: 13 / 1 / 15 / 4;
 	height: 82px;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: var(--font-32);
 	line-height: 48px;
 	letter-spacing: -0.5px;
 	cursor: pointer;
-	color: #fff;
+	color: var(--main-white);
 }
 
 .hero--box7 {
@@ -290,7 +303,7 @@ header {
 .hero--box10 {
 	grid-area: 3 / 9 / 4 / 13;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	color: var(--main-text-color);
 }
@@ -298,11 +311,11 @@ header {
 .grid-h3 {
 	margin: 0;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: var(--font-48);
 	line-height: 56px;
 	text-align: center;
 	letter-spacing: -1px;
-	color: #fff;
+	color: var(--main-white);
 	text-shadow: 0px 4px 0px var(--text-shadow);
 }
 
@@ -319,17 +332,17 @@ header {
 	right: 16px;
 	top: 16px;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: var(--font-14);
 	line-height: 24px;
 	text-align: center;
 	letter-spacing: 0.25px;
-	color: #fff;
+	color: var(--main-white);
 	padding: 0 16px;
 }
 
 .box-4-text>b {
 	font-weight: 700;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	letter-spacing: 0.2px;
 }
@@ -343,7 +356,7 @@ header {
 
 .btn {
 	border-radius: 999px;
-	background: #6C5CE7;
+	background: var(--main-purple);
 }
 
 /* price */
@@ -357,7 +370,7 @@ header {
 
 .price__title {
 	font-weight: 900;
-	font-size: 64px;
+	font-size: var(--font-64);
 	line-height: 77px;
 	margin: 0;
 }
@@ -366,7 +379,7 @@ header {
 	margin-top: 34px;
 	margin-bottom: 40px;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: var(--font-32);
 	line-height: 48px;
 	letter-spacing: -0.5px;
 	color: var(--main-gray);
@@ -410,7 +423,7 @@ header {
 	text-align: left;
 	margin: 0 15px;
 	z-index: 2;
-	background-color: #fff;
+	background-color: var(--main-white);
 }
 
 .card--middle {
@@ -421,10 +434,10 @@ header {
 .price__cardStatus {
 	margin: 0;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	letter-spacing: 0.2px;
-	color: #6C5CE7;
+	color: var(--main-purple);
 }
 
 .price__card--stiker {
@@ -438,7 +451,7 @@ header {
 	box-sizing: border-box;
 	padding-top: 7px;
 	font-weight: 800;
-	font-size: 12px;
+	font-size: var(--font-12);
 }
 
 .price__card--desc {
@@ -467,7 +480,7 @@ header {
 
 .price__cardCost {
 	font-weight: 700;
-	font-size: 48px;
+	font-size: var(--font-48);
 	line-height: 56px;
 	letter-spacing: -1px;
 	margin: 16px 0 0 0;
@@ -476,7 +489,7 @@ header {
 .price--cardPeriod {
 	vertical-align: baseline;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: var(--font-12);
 	letter-spacing: 2.5px;
 	font-weight: 800;
 }
@@ -488,22 +501,22 @@ header {
 
 .price--btn {
 	font-weight: 700;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	letter-spacing: 0.2px;
 	height: 64px;
 	border: 1px solid var(--main-gray);
 	border-radius: 16px;
-	background-color: #fff;
+	background-color: var(--main-white);
 	width: 306px;
-	color: #6C5CE7;
+	color: var(--main-purple);
 }
 
 .middle--btn {
-	background: #6C5CE7;
-	color: #fff;
+	background: var(--main-purple);
+	color: var(--main-white);
 	font-weight: 700;
-	font-size: 24px;
+	font-size: var(--font-24);
 	line-height: 36px;
 	letter-spacing: 0.25px;
 }
@@ -529,13 +542,13 @@ header {
 	margin-top: 80px;
 	margin-bottom: 0;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: var(--font-32);
 }
 
 .pros__subtitle {
 	margin-top: 15px;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: var(--font-24);
 }
 
 .pros__elements {
@@ -547,14 +560,14 @@ header {
 .pros__element--name {
 	margin-top: 24px;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: var(--font-24);
 }
 
 .pros__element--discription {
 	width: 270px;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 }
 
@@ -563,21 +576,21 @@ header {
 	border: 1px solid var(--main-gray);
 	border-radius: 16px;
 	font-weight: 700;
-	font-size: 18px;
-	color: #6C5CE7;
+	font-size: var(--font-18);
+	color: var(--main-purple);
 	width: 146px;
 	height: 48px;
-	background-color: #fff;
+	background-color: var(--main-white);
 }
 
 /* footer */
 
 footer { 
 	width: 100%;
-	padding: 0;
 }
 
 .footer__container {
+	padding: 15px;
 	display: flex;
 	position: relative;
 	z-index: 2;
@@ -586,7 +599,7 @@ footer {
 
 .footer--label {
 	font-weight: 800;
-	font-size: 12px;
+	font-size: var(--font-12);
 	line-height: 15px;
 	letter-spacing: 2.5px;
 	text-transform: uppercase;
@@ -607,7 +620,7 @@ footer {
 	grid-template-rows: auto auto;
 	grid-gap: 16px 30px;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: var(--font-14);
 	line-height: 24px;
 	letter-spacing: 0.25px;
 	color: var(--main-text-color);
@@ -652,9 +665,9 @@ footer {
 .footer--mail {
 	margin: 0;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: var(--font-32);
 	line-height: 48px;
-	color: #6C5CE7;
+	color: var(--main-purple);
 	letter-spacing: -0.5px;
 	flex: 1;
 }
@@ -689,7 +702,7 @@ textarea {
 	box-sizing: border-box;
 	outline: none;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	border: none;
 	border-radius: 16px;
@@ -697,7 +710,7 @@ textarea {
 }
 
 input:focus, textarea:focus {
-	outline: 2px solid #6C5CE7;
+	outline: 2px solid var(--main-purple);
 }
 
 .form__data {
@@ -720,7 +733,7 @@ input:focus, textarea:focus {
 }
 
 .form--message {
-	color: #6C5CE7;
+	color: var(--main-purple);
 	background: url(./assets/footer/msg.svg) no-repeat right top;
 	flex: 3 370px;
 }
@@ -730,7 +743,7 @@ input:focus, textarea:focus {
 	font-weight: 700;
 	padding-bottom: 10px;
 	align-items: stretch;
-	font-size: 18px;
+	font-size: var(--font-18);
 	line-height: 32px;
 	letter-spacing: 0.2px;
 	color: var(--main-purple);
@@ -744,9 +757,9 @@ input:focus, textarea:focus {
 	box-shadow: 0px 8px 24px rgba(38, 50, 56, 0.1), 0px 16px 32px rgba(38, 50, 56, 0.08);
 	flex: 2 170px;
 	border-radius: 16px;
-	background: #6C5CE7;
+	background: var(--main-purple);
 	font-weight: 700;
-	font-size: 24px;
+	font-size: var(--font-24);
 	line-height: 36px;
 	color: var(--main-white);
 	letter-spacing: 0.25px;
