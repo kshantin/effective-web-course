@@ -613,7 +613,7 @@ footer {
 	gap: 37px;
 }
 
-.footer__info--components {
+.footer__info--link {
 	margin-top: 16px;
 	display: grid;
 	grid-template-columns: repeat(3, 170px);
@@ -630,35 +630,35 @@ footer {
 	margin-top: 48px;
 }
 
-.comp--one {
+.link--one {
 	grid-area: 1 / 1;
 }
 
-.comp--two {
+.link--two {
 	grid-area: 2 / 1;
 }
 
-.comp--three {
+.link--three {
 	grid-area: 3 / 1;
 }
 
-.comp--four {
+.link--four {
 	grid-area: 1 / 2;
 }
 
-.comp--five {
+.link--five {
 	grid-area: 2;
 }
 
-.comp--six {
+.link--six {
 	grid-area: 3 / 2;
 }
 
-.comp--seven {
+.link--seven {
 	grid-area: 1 / 3;
 }
 
-.comp--eigth {
+.link--eigth {
 	grid-area: 2 / 3;
 }
 
