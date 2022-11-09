@@ -613,7 +613,7 @@ footer {
 	gap: 37px;
 }
 
-.footer__info--components {
+.footer__info--link {
 	margin-top: 16px;
 	display: grid;
 	grid-template-columns: repeat(3, 170px);
