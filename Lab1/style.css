@@ -99,7 +99,7 @@ header {
 .header--title {
 	margin: 0;
 	font-weight: 700;
-	font-size: var(--font-96);
+	font-size: var(--font-64);
 	line-height: 56px;
 	letter-spacing: -1px;
 	color: var(--main-text-color);
@@ -613,7 +613,7 @@ footer {
 	gap: 37px;
 }
 
-.footer__info--link {
+.footer__info--links {
 	margin-top: 16px;
 	display: grid;
 	grid-template-columns: repeat(3, 170px);
