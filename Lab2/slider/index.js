@@ -31,4 +31,15 @@ document.querySelectorAll(".slider__navlink").forEach((bullet, bulletIndex) => {
   });
 });
 
+document.body.onkeydown = function (e) {  
+	if (e.keyCode == 32) {
+		changeSlide(currentSlide + 1);	//swipe right with space
+	}
+	if(e.keyCode == 39) {
+    changeSlide(currentSlide + 1); //swipe right with arrow right
+  }
+	if (e.keyCode == 37) {
+    changeSlide(currentSlide - 1);	//swipe left with arrow left
+  } 
+}
 
