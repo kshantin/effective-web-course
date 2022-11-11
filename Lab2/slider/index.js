@@ -43,3 +43,9 @@ document.body.onkeydown = function (e) {
   } 
 }
 
+let interval = 5000; 
+
+setInterval(() => {
+	changeSlide(currentSlide + 1);
+}, interval);
+
